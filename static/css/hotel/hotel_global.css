@@ -1,6 +1,7 @@
 :root {
       --secondary-15: #FC5A3126;
       --text-40: #00000066;
+      --text-20: #00000033;
 }
 
 .g-hero-banner-img img {
@@ -231,6 +232,184 @@
 
 
 
+
+
+
+
+
+
+
+.advantage .item .title {
+      font-weight: 600;
+      font-style: Medium;
+      font-size: 18px;
+      leading-trim: NONE;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: #000000;
+      white-space: nowrap;
+}
+
+.advantage .item .desc {
+      font-family: Inter;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: #000000CC;
+      margin-top: 10px;
+}
+
+.advantage .item .icon {
+      width: 54px;
+      height: 54px;
+}
+
+.advantage .item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 88px;
+      padding: 20px 24px;
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid #00000005;
+}
+
+.advantage .item::before {
+      content: "";
+      position: absolute;
+      width: 207px;
+      height: 207px;
+      border-radius: 50%;
+      filter: blur(150px);
+      top: -60px;
+      left: 12px;
+      z-index: 0;
+}
+
+.advantage .item>* {
+      position: relative;
+      z-index: 1;
+}
+
+/* Card 1 - Best Price Guarantee (peach/orange) */
+.advantage .item:nth-child(1)::before {
+      background: #FC5A31;
+}
+
+/* Card 2 - Verified Reviews (green) */
+.advantage .item:nth-child(2)::before {
+      background: #2FB344;
+}
+
+/* Card 3 - Free Cancellation (blue) */
+.advantage .item:nth-child(3)::before {
+      background: #0067A3;
+}
+
+/* Card 4 - 24/7 Support (purple/magenta) */
+.advantage .item:nth-child(4)::before {
+      background: #94357e;
+}
+
+.advantage .item .icon {
+      width: 52px;
+      min-width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.advantage .item .icon svg {
+      display: block;
+      max-width: 52px;
+      max-height: 52px;
+}
+
+
+.section-title {
+      text-align: center;
+}
+
+.section-sub-title {
+      font-size: var(--fs-lg);
+      font-weight: var(--fw-400);
+      text-align: center;
+      color: #000000;
+}
+
+
+
+
+/*========================= explore-Unique  ========================*/
+.explore-unique {}
+
+.explore-unique .item {
+      position: relative;
+      height: 320px;
+      border-radius: 32px;
+      overflow: hidden;
+}
+
+.explore-unique .item::after {
+      content: '';
+      background: linear-gradient(184.55deg, rgba(0, 0, 0, 0) 57.07%, rgba(0, 0, 0, 0.8) 74.68%);
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 220px;
+      z-index: 2;
+      position: absolute;
+}
+
+.explore-unique .item img {
+      position: absolute;
+      inset: 1;
+      height: 100%;
+}
+
+.explore-unique .item-content {
+      padding: 24px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 3;
+}
+
+.explore-unique .item-content .title {
+      color: white;
+      font-size: 24px;
+}
+
+.explore-unique .item-content .desc {
+      color: #FFFFFFE5;
+      font-size: 16px;
+      margin-top: 8px;
+}
+
+.explore-unique .top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+}
+
+.explore-unique .top svg {
+      width: 100%;
+}
+
+.explore-unique .middle-icon {
+      position: absolute;
+      left: 50%;
+      top: 20px;
+      transform: translateX(-50%);
+}
 
 @media (max-width:1439px) {
       .g-hero .top-right {
