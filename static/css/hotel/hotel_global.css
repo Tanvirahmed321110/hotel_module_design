@@ -354,6 +354,7 @@
       height: 320px;
       border-radius: 32px;
       overflow: hidden;
+      transition: .3s ease;
 }
 
 .explore-unique .item::after {
@@ -379,6 +380,7 @@
       bottom: 0;
       left: 0;
       z-index: 3;
+      transition: .3s ease;
 }
 
 .explore-unique .item-content .title {
@@ -398,6 +400,15 @@
       left: 0;
       width: 100%;
       z-index: 2;
+      transition: .3s ease;
+}
+
+.explore-unique .item:hover .top {
+      transform: translateY(-16px);
+}
+
+.explore-unique .item:hover .item-content {
+      transform: translateY(-12px);
 }
 
 .explore-unique .top svg {
