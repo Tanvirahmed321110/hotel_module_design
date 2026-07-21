@@ -1,0 +1,99 @@
+.offer-sec {
+      background-color: #FAFAFA;
+      padding: 100px 0;
+}
+
+.offer-sec .section-title {
+      text-align: left;
+}
+
+
+/* Offer Slider Items */
+.offer-slider-items .offer-slide-item {
+      background-color: #FC5A3126;
+      height: 270px;
+      border-radius: 32px;
+      overflow: hidden;
+      display: flex;
+      flex: 1 1;
+      position: relative;
+      width: 100%;
+}
+
+.offer-slider-items .offer-slide-item.yellow-card {
+      background-color: #FEEFBF;
+}
+
+.offer-slider-items .offer-content {
+      padding: 32px;
+      flex: 1;
+}
+
+.offer-slider-items .offer-content .book-btn {
+      padding: 13px 32px;
+      border-radius: 16px;
+      font-size: 16px;
+      background-color: var(--my-secondary-color);
+      color: #FAFAFA;
+}
+
+
+.offer-slider-items .offer-content .category {
+      color: var(--my-secondary-color);
+      font-size: 16px;
+      font-weight: 700;
+}
+
+
+
+.offer-slider-items .offer-content .s-title {
+      margin-top: 8px;
+      color: #00000099;
+      font-size: 16px;
+      font-weight: 500;
+}
+
+
+
+.offer-slider-items .offer-image {
+      flex: 1;
+      position: relative;
+      border-radius: 150px 0 0 150px;
+      padding: 4px;
+      background-repeat: no-repeat;
+      width: 100%;
+      background-position: center;
+      border-radius: 24% 0 0 52%;
+      z-index: 1;
+      background-size: cover;
+}
+
+.offer-slider-items .offer-image::before {
+      content: "";
+      position: absolute;
+      inset: -4px auto -4px -11px;
+      width: 100%;
+      border: 3px solid rgba(255, 255, 255, 0.95);
+      border-right: 0;
+      border-radius: 24% 0 0 52%;
+      pointer-events: none;
+      z-index: 2;
+}
+
+
+
+
+
+.offer-slider-items .icon-right {
+      top: 0;
+      right: 0;
+      position: absolute;
+      z-index: 2;
+}
+
+.offer-slider-items .icon-bottom {
+      position: absolute;
+      bottom: 0;
+      z-index: 2;
+      left: 12px;
+}
