@@ -346,6 +346,105 @@
    fill: rgba(255, 255, 255, .3);
 }
 
+/* Hotel card hover interaction */
+.offer-tabs .offer-card {
+   isolation: isolate;
+   cursor: pointer;
+   transition: transform .38s cubic-bezier(.2, .75, .25, 1),
+      box-shadow .38s ease;
+}
+
+.offer-tabs .offer-card img,
+.offer-tabs .offer-card .offer,
+.offer-tabs .offer-card .bottom-content,
+.offer-tabs .offer-card .avg {
+   transition: transform .38s cubic-bezier(.2, .75, .25, 1),
+      filter .38s ease;
+}
+
+.offer-tabs .offer-card::after {
+   transition: background .38s ease;
+}
+
+.offer-tabs .offer-card:hover {
+   transform: translateY(-7px);
+   box-shadow: 0 18px 38px rgba(15, 23, 42, .24);
+}
+
+.offer-tabs .offer-card:hover img {
+   transform: scale(1.07);
+}
+
+.offer-tabs .offer-card:hover::after {
+   background: linear-gradient(180deg,
+         rgba(0, 0, 0, .5) 0%,
+         rgba(0, 0, 0, .05) 46%,
+         rgba(0, 0, 0, .88) 100%);
+}
+
+.offer-tabs .offer-card:hover .bottom-content {
+   transform: translateY(-5px);
+}
+
+.offer-tabs .offer-card:hover .offer {
+   transform: translateX(4px);
+   filter: brightness(1.08);
+}
+
+.offer-tabs .offer-card:hover .avg {
+   transform: scale(1.06);
+}
+
+.offer-tabs .offer-card:hover .stars svg {
+   animation: offer-star-pop 1.15s ease-in-out infinite;
+}
+
+.offer-tabs .offer-card:hover .stars svg:nth-child(2) {
+   animation-delay: .1s;
+}
+
+.offer-tabs .offer-card:hover .stars svg:nth-child(3) {
+   animation-delay: .2s;
+}
+
+.offer-tabs .offer-card:hover .stars svg:nth-child(4) {
+   animation-delay: .3s;
+}
+
+.offer-tabs .offer-card:hover .stars svg:nth-child(5) {
+   animation-delay: .4s;
+}
+
+@keyframes offer-star-pop {
+
+   0%,
+   55%,
+   100% {
+      transform: translateY(0) scale(1) rotate(0);
+      filter: brightness(1);
+   }
+
+   25% {
+      transform: translateY(-4px) scale(1.22) rotate(8deg);
+      filter: brightness(1.22);
+   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+   .offer-tabs .offer-card,
+   .offer-tabs .offer-card img,
+   .offer-tabs .offer-card .offer,
+   .offer-tabs .offer-card .bottom-content,
+   .offer-tabs .offer-card .avg {
+      transition: none;
+   }
+
+   .offer-tabs .offer-card:hover .stars svg {
+      animation: none;
+   }
+}
+
 .offer-tabs .tab-content>.left .top-content>div+div {
    display: flex;
    justify-content: flex-end;
@@ -389,10 +488,11 @@
    height: 68px;
    padding-left: 4px;
    border-radius: 50%;
-   background: #887970;
+   background: #88797053;
    color: #fff;
    font-size: 25px;
    transform: translate(-50%, -50%);
+   backdrop-filter: blur(10px);
 }
 
 @media (max-width: 991px) {
