@@ -234,9 +234,65 @@
 
 
 
+/* Search */
+.recent-search-slider .search-card {
+   padding: 8px;
+   background-color: #fff;
+   border: 1px solid #0000001A;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+   gap: 16px;
+}
+
+.recent-search-slider .search-card .left {
+   position: relative;
+   width: 110px;
+   height: 80px;
+   overflow: hidden;
+   border-radius: 16px;
+   border: 1px solid #0000001A;
+}
+
+.recent-search-slider .search-card .left::after {
+   content: '';
+   background: linear-gradient(185.66deg, rgba(0, 0, 0, 0) 42.62%, rgba(0, 0, 0, 0.8) 72.55%);
+   inset: 0;
+   z-index: 2;
+   position: absolute;
+}
+
+.recent-search-slider .search-card .left img {
+   width: 100%;
+   height: 100%;
+}
+
+.recent-search-slider .search-card .right {
+   flex: 1;
+   justify-content: space-between;
+}
+
+.recent-search-slider .search-card .batch {
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 3;
+}
+
+.recent-search-slider .search-card .batch .text {
+   position: absolute;
+   color: #fff;
+   font-weight: 500;
+   font-size: 12px;
+}
 
 
-@media (max-width: 1300px) {
+
+
+
+@media (max-width: 1439px) {
    .offer-slider-prev {
       left: 8px;
    }
@@ -530,5 +586,57 @@
 
    .offer-tabs .offer-card .top-content>.my-flex-between {
       font-size: 17px;
+   }
+}
+
+.recent-search-slider {
+   overflow: hidden;
+   padding: 2px 2px 10px;
+}
+
+.recent-search-slider .swiper-wrapper {
+   display: flex;
+   transition-timing-function: linear !important;
+}
+
+.recent-search-slider .swiper-slide {
+   height: auto;
+}
+
+.recent-search-slider .search-card {
+   height: 100%;
+   transition: .3s ease;
+   width: 100%;
+}
+
+.recent-search-slider .search-card .title-lg {
+   font-size: 18px;
+}
+
+.recent-search-slider .search-card:hover {
+   border-color: var(--my-secondary-color);
+}
+
+.recent-search-slider .search-card .right button {
+   flex: 0 0 auto;
+   border: 0;
+   background: transparent;
+   cursor: pointer;
+}
+
+@media (max-width: 575px) {
+   .recent-search-slider .search-card {
+      gap: 10px;
+      border-radius: 14px;
+   }
+
+   .recent-search-slider .search-card .left {
+      width: 88px;
+      height: 70px;
+      border-radius: 12px;
+   }
+
+   .recent-search-slider .search-card .right .title-lg {
+      font-size: 14px;
    }
 }

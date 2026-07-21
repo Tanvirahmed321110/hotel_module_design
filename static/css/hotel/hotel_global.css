@@ -10,10 +10,15 @@
 
 .title,
 .section-title,
-.title-xl {
+.title-xl,
+.title-lg {
    font-family: var(--font-title);
    font-weight: 600;
    color: var(--my-text-primary);
+}
+
+.title-lg {
+   font-size: 20px;
 }
 
 .title-xl {
