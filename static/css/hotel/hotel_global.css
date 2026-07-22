@@ -30,8 +30,8 @@
 .section-sub-title {
    font-size: var(--fs-lg);
    font-weight: var(--fw-400);
-   text-align: center;
    color: #000000;
+   max-width: 770px;
 }
 
 
