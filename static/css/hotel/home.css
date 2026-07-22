@@ -1,6 +1,6 @@
 .offer-sec {
    background-color: #FAFAFA;
-   padding: 100px 0;
+   padding: 80px 0;
 }
 
 .offer-sec .section-title {
@@ -638,6 +638,10 @@
    align-items: center;
 }
 
+.ready-to-list .item:hover .icon svg {
+   animation: guest-icon-bounce 0.5s ease;
+}
+
 .ready-to-list .item .icon {
    width: 60px;
    height: 60px;
@@ -660,7 +664,11 @@
 
 
 /* Our Blogs */
-/* Blog */
+.our-blog {
+   background-color: #FAFAFA;
+   padding: 80px 0;
+}
+
 .our-blog .item {
    max-width: 600px;
    margin: 0 auto;
@@ -734,10 +742,108 @@
 
 
 
+/* guest-saying */
+.guest-saying .section-title {
+   text-align: center;
+}
+
+.guest-saying .section-sub-title {
+   text-align: center;
+   max-width: 100%;
+}
+
+.guest-saying .item {
+   border: 1px solid #00000026;
+   padding: 24px;
+   border-radius: 24px;
+   background-color: #0B8A511A;
+   display: flex;
+   align-items: flex-start;
+   gap: 14px;
+}
+
+.guest-saying .item .left {
+   flex-shrink: 0;
+}
+
+.guest-saying .item .left svg {
+   display: block;
+   transform-origin: center;
+}
+
+.guest-saying .item:hover .left svg {
+   animation: guest-icon-bounce 0.5s ease;
+}
+
+@keyframes guest-icon-bounce {
+
+   0%,
+   100% {
+      transform: translateY(0) rotate(0deg) scale(1);
+   }
+
+   35% {
+      transform: translateY(-8px) rotate(-8deg) scale(1.08);
+   }
+
+   65% {
+      transform: translateY(-2px) rotate(6deg) scale(1.04);
+   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+   .guest-saying .item:hover .left svg {
+      animation: none;
+   }
+}
+
+.guest-saying .item .right {
+   flex: 1;
+}
+
+.guest-saying .item:nth-child(1) {
+   background-color: #0B8A511A;
+}
+
+.guest-saying .item:nth-child(2) {
+   background-color: #FF9D001F;
+}
+
+.guest-saying .item:nth-child(3) {
+   background-color: #9A3A831A;
+}
+
+.guest-saying .item:nth-child(4) {
+   background-color: #9A3A831A;
+}
+
+.guest-saying .item:nth-child(5) {
+   background-color: #0B8A511A;
+}
+
+.guest-saying .item:nth-child(6) {
+   background-color: #FF9D001A;
+}
+
+.guest-saying .item .title-xl {
+   font-size: 32px;
+}
+
+.guest-saying .item .desc {
+   color: #000000B2;
+   font-size: 16px;
+   max-width: 310px;
+   line-height: 1.6;
+}
+
+.guest-saying .item .desc strong {
+   color: #000000;
+   font-weight: 600
+}
 
 
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
    .recent-search-slider .search-card {
       gap: 10px;
       border-radius: 14px;
